@@ -1,0 +1,118 @@
+<% if (title === 'Home') { %>
+    <section class="homepage">
+      <div class="container text-center">
+        <h2>Welcome to my Portfolio!</h2>
+        <h4>Driven by a Passion for Growth and Creativity</h4>
+        <p>Welcome to the exciting world of JRA</p>
+        <a href="/about" class="btn btn-primary"> More About Me</a>
+      </div>
+    </section>
+  <% } else if (title === 'About') { %>
+    <section class="about-section">
+
+      <div class="container text-center">
+        <h3 class="highlight">Chung Yin Tang</h3>
+        <img class="mypicture" src="/images/Gary.jpg" alt="mypicture">  
+        <h4></h4>
+        <p>
+          My name is Chung Yin Tang, you can also call me Gary. 
+          I come from Hong Kong, i am taking software engineering technician programe now.
+          I am in the thrid semester now and hope i can learn more about coding.
+        </p>
+        <a href='' class="btn btn-primary" target="_blank">View PDF Resume</a>
+    </div>
+     
+    </section>
+  <% } else if (title === 'Contact') { %>
+    <section class="contact-section">
+      <div class="container">
+        
+        <p>Get In Touch With Me :</p>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <p><strong>Name:</strong> Chung Yin Tang</p>
+                <p><strong>Email:</strong> tanggary0827@gmail.com</p>
+                <p><strong>Phone:</strong> 647-000-0000</p>
+                <p><strong>Address:</strong> 123 Main Street, Anytown, USA </p>
+            </div>
+        </div>
+        <form id="contact-form" action="/" method="post">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="contactNumber">Contact Number</label>
+                <input type="tel" id="contactNumber" name="contactNumber" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="emailAddress">Email Address</label>
+                <input type="email" id="emailAddress" name="emailAddress" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" class="form-control" required></textarea>
+            </div>
+            <a href="/home" class="btn btn-primary">Send</a> 
+            
+        </form>
+    </div>
+    </section>
+  <% } else if (title === 'Project') { %>
+    <section class="project-section">
+      <div class="container text-center">
+       
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="myproject" src="/images/p1.jpg" alt="Project 1"> 
+                <h3>color in the div</h3>
+                <p>Basically, i just put the color inside the div.</p>
+            </div>
+            <div class="col-sm-4">
+                <img class="myproject" src="/images/p3.jpg" alt="Project 2">
+                <h3>The Cat Gallery </h3>
+                <p>If you choose the JSON file, and it will shows different cat. </p>
+            </div>
+            <div class="col-sm-4">
+                <img class="myproject" src="/images/p4.jpg" alt="Project 3">
+                <h3>Pixar movie</h3>
+                <p>If you choose the JSON file, it will shows different pixar movies and you and choose different movies by the filter.  </p>
+            </div>            
+        </div>
+    </div>
+    </section>
+  <% } else if (title === 'Service') { %>
+    <section class="service-section">
+      <div class="container text-center">
+        <h3 class="highlight">My Services</h3>
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="myservices" src="/images/Javascript.jpg" alt="Javascript" >
+                <p>Javascript Programming</p>
+            </div>
+            <div class="col-sm-4">
+                <img class="myservices" src="/images/HTML.jpg" alt="Web Development" >
+                <p>HTML Web Development</p>
+            </div>
+            <div class="col-sm-4">
+                <img class="myservices" src="/images/Database.jpg" alt="Database SQL" >
+                <p>Database SQL</p>
+            </div>
+        </div>
+    </div>
+    </section>
+  <% } else { %>
+    <section>
+      
+    </section>
+  <% } %>
+  
+  
+  
+      
+      
+   

@@ -1,0 +1,26 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #369675;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.mypicture{
+height: 200px;
+
+}
+
+.myservices{
+  width: 350px;
+  height: 300px;
+
+}
+
+.myproject{
+  width: 350px;
+  height: 300px;
+
+}
